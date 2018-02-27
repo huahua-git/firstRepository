@@ -13,6 +13,7 @@ public class AlipayCallRecord implements Serializable {
 	private String callErrorMessage;
 	private String callResponse;
 	private String callTime;
+	private String callTime222;
 	
 	public String getId() {
 		return id;

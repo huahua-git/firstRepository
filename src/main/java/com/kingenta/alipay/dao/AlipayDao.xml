@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kingenta.alipay.dao.AlipayDao" >
+
+	<insert id="saveAlipayCallRecord" useGeneratedKeys="true" keyProperty="id" parameterType="com.kingenta.alipay.vo.AlipayCallRecord">
+    INSERT INTO KF_ALIPAY_CALL_RECORD (CALL_SERVICE, 
+    								   CALL_PARAM, 
+    								   CALL_TIME, 
+    								   CALL_SUCCESS, 
+    								   CALL_ERROR_MESSAGE,
+    								   CALL_RESPONSE) VALUES (#{callService},
+    								   						  #{callParam},
+    								   						  #{callTime},
+    								   						  #{callSuccess},
+    								   						  #{callErrorMessage},
+    								   						  #{callResponse})
+	</insert>
+
+</mapper>
